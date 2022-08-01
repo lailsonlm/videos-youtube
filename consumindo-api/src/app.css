@@ -1,0 +1,70 @@
+main {
+  margin: 0 auto;
+  width: 800px;
+  height: 100%;
+}
+
+.title {
+  color: #ee6c4d;
+  margin: 50px 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+form input {
+  font-size: 24px;
+  margin-bottom: 30px;
+  background-color: #e0fbfc;
+  border: none;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+form input:focus, button:focus {
+  outline: 3px solid #ee6c4d;
+}
+
+.zipCode {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.zipCode input {
+  margin: 0;
+}
+
+.zipCode button {
+  font-size: 24px;
+  padding: 8px 16px;
+  margin-left: 20px;
+  background-color: transparent;
+  border: 1px solid #ee6c4d;
+  color: #ee6c4d;
+  /* border: none; */
+  border-radius: 4px;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.zipCode button:disabled {
+  cursor: not-allowed;
+  background-color: transparent;
+  border: 1px solid #ee6c4d;
+  color: #ee6c4d;
+}
+
+.zipCode button:hover:enabled {
+  background-color: #ee6c4d;
+  color: #293241;
+  transition: 0.3s ease-in-out;
+}
